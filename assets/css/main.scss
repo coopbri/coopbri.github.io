@@ -1,3 +1,39 @@
-body {
-  background-color: #E5E7E9;
+$bg-color: #2c3e50;
+$hover-color: #16a085;
+$text-color: #ffffff;
+
+html, body {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  margin: 0px;
+}
+
+#background {
+  background-image: url("../img/fern.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $text-color;
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $hover-color;
+  }
 }

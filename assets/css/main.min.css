@@ -1,1 +1,1 @@
-body{background-color:#E5E7E9}
+html,body{height:100%;font-family:Helvetica, sans-serif;margin:0px}#background{background-image:url("../img/fern.jpg");height:100%;background-position:center;background-repeat:no-repeat;background-size:cover}nav ul{margin:0;padding:0}nav li{display:inline-block}nav a{color:#fff;display:inline-block;padding:10px 16px;text-decoration:none}nav a:hover{color:#16a085}
