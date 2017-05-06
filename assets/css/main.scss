@@ -5,11 +5,11 @@ $text-color: #ffffff;
 html, body {
   height: 100%;
   font-family: Helvetica, sans-serif;
-  margin: 0px;
+  margin: 0;
 }
 
 #background {
-  background-image: url("../img/fern.jpg");
+  background-image: url("../img/fern.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,11 +17,6 @@ html, body {
 }
 
 nav {
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
   li {
     display: inline-block;
   }
@@ -29,11 +24,31 @@ nav {
   a {
     color: $text-color;
     display: inline-block;
-    padding: 10px 16px;
+    padding: 25px 25px;
     text-decoration: none;
   }
 
   a:hover {
     color: $hover-color;
+  }
+}
+
+#nav-left {
+  ul {
+    letter-spacing: 3px;
+    position: absolute;
+    left: 0px;
+    margin: 0;
+    padding: 0px 25px;
+  }
+}
+
+#nav-right {
+  ul {
+    letter-spacing: 3px;
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    padding: 25px 25px;
   }
 }
