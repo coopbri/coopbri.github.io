@@ -1,6 +1,6 @@
 $bg-color: #17202A;
 $hover-color: #16a085;
-$text-color: #ffffff;
+$text-color: #DBDBDB;
 
 html, body {
   height: 100%;
@@ -57,17 +57,31 @@ nav {
 
 #content {
   color: $text-color;
-  width: 300px;
-  height: 100px;
+  width: 810px;
+  height: 650px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  text-align: center;
-  vertical-align: text-top;
+  text-align: left;
+
+  #brian {
+    border-radius: 25px;
+    float: left;
+    max-width: 90%;
+    max-height: 90%;
+    margin-right: 30px;
+    vertical-align: top;
+    }
+
+  a {
+    text-decoration: none;
+    color: $hover-color;
+  }
 }
+
 footer {
   letter-spacing: 1px;
   color: $text-color;
