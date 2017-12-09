@@ -38,7 +38,7 @@ nav {
 #nav-left {
   ul {
     letter-spacing: 3px;
-    position: absolute;
+    position: fixed;
     left: 0px;
     margin: 0;
     padding: 0px 25px;
@@ -48,7 +48,7 @@ nav {
 #nav-right {
   ul {
     letter-spacing: 3px;
-    position: absolute;
+    position: fixed;
     right: 0px;
     margin: 0;
     padding: 25px 25px;
@@ -57,24 +57,28 @@ nav {
 
 #content {
   color: $text-color;
-  width: 810px;
-  height: 650px;
-  position: absolute;
+  width: 50%;
+  height: 50%;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  text-align: left;
 
   #brian {
     border-radius: 25px;
     float: left;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 50%;
+    max-height: 100%;
     margin-right: 30px;
-    vertical-align: top;
+    z-index: -1;
     }
+
+  p {
+    text-align: center;
+    word-wrap: break-word;
+  }
 
   a {
     text-decoration: none;
