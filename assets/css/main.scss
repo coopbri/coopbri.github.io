@@ -16,9 +16,11 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0; /* For fade */
 }
 
 nav {
+  opacity: 0; /* For fade */
   li {
     display: inline-block;
   }
@@ -88,12 +90,19 @@ nav {
   h2 {
     text-align: center;
   }
+
+  #construction {
+    opacity: 0;
+  }
 }
 
 footer {
+  display: inline;
+  text-align: center;
   letter-spacing: 1px;
   color: $text-color;
   width: 100%;
   bottom: 8px;
   position: fixed;
+  opacity: 0; /* For fade */
 }
