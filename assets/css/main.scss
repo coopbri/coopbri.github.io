@@ -38,6 +38,12 @@ nav {
 }
 
 #nav-left {
+
+  /* For mobile */
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
   ul {
     letter-spacing: 3px;
     position: fixed;
@@ -48,6 +54,12 @@ nav {
 }
 
 #nav-right {
+
+  /* For mobile */
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
   ul {
     letter-spacing: 3px;
     position: fixed;
