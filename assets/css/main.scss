@@ -20,7 +20,7 @@ html, body {
 }
 
 nav {
-  opacity: 0; /* For fade */
+
   li {
     display: inline-block;
   }
@@ -55,6 +55,10 @@ nav {
     margin: 0;
     padding: 25px 25px;
   }
+}
+
+#fadein {
+  opacity: 0; /* For fade */
 }
 
 #content {
