@@ -3,6 +3,7 @@ $hover-color: #16a085;
 $text-color: #DBDBDB;
 
 html, body {
+
   height: 100%;
   font-family: Helvetica, sans-serif;
   margin: 0;
@@ -11,6 +12,7 @@ html, body {
 }
 
 #background {
+
   background-image: url("../img/fern.jpg");
   height: 100%;
   background-position: center;
@@ -20,6 +22,8 @@ html, body {
 }
 
 nav {
+
+  width: 100%;
 
   li {
     display: inline-block;
@@ -35,37 +39,41 @@ nav {
   a:hover {
     color: $hover-color;
   }
+
+  /* For mobile */
+  // center name and nav if viewport is relatively small
+  @media only screen and (max-width: 930px) {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+  }
 }
 
 #nav-left {
 
-  /* For mobile */
-  @media (max-width: 960px) {
-    text-align: center;
-  }
-
   ul {
     letter-spacing: 3px;
-    position: fixed;
-    left: 0px;
     margin: 0;
     padding: 0px 25px;
+
+    // float name to left if viewport is relatively large
+    @media only screen and (min-width: 931px) {
+      float: left;
+    }
   }
 }
 
 #nav-right {
 
-  /* For mobile */
-  @media (max-width: 960px) {
-    text-align: center;
-  }
-
   ul {
     letter-spacing: 3px;
-    position: fixed;
-    right: 0px;
     margin: 0;
     padding: 25px 25px;
+  }
+
+  // float nav to right if viewport is relatively large
+  @media only screen and (min-width: 931px) {
+    float: right;
   }
 }
 
@@ -77,12 +85,17 @@ nav {
   color: $text-color;
   width: 50%;
   height: 50%;
-  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  position: fixed;
   margin: auto;
+
+  /* For mobile */
+  @media only screen and (max-width: 640px) {
+    margin-top: 75%;
+  }
 
   #brian {
     border-radius: 25px;
@@ -113,7 +126,6 @@ nav {
 }
 
 footer {
-  display: inline;
   text-align: center;
   letter-spacing: 1px;
   color: $text-color;
