@@ -40,6 +40,11 @@ nav {
     color: $hover-color;
   }
 
+  #index-static {
+    color: $text-color;
+    padding: 25px 25px;
+  }
+
   /* For mobile */
   // center name and nav if viewport is relatively small
   @media only screen and (max-width: 930px) {
