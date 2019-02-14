@@ -109,11 +109,13 @@ nav {
     max-height: 100%;
     margin-right: 30px;
     z-index: -1;
+    opacity: 0; /* For fade */
     }
 
   p {
     text-align: center;
     word-wrap: normal;
+    opacity: 0;
   }
 
   a {
