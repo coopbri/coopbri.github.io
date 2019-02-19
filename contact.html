@@ -18,7 +18,37 @@
     <div class="core-static"></div>
 
     <div id="content">
-      <h2 id="construction">This page is under construction</h2>
+      <div class="form-container">
+        <form id="contact" action="" method="post">
+          <h3>Contact Me</h3>
+          <h4>Please use the form below if you would like to get in touch.</h4>
+          <h4>You can also reach me on <a href="https://www.linkedin.com/in/coopbri/">LinkedIn</a> or <a href="mailto:brian@briancooper.online?Subject=Personal%20Website%20Contact">email</a> me directly.</h4>
+          <br />
+          <fieldset>
+            <input name="name" placeholder="Full Name" type="text" tabindex="1" required autofocus />
+          </fieldset>
+
+          <fieldset>
+            <input name="email" placeholder="Email Address (Optional)" type="email" tabindex="2" />
+          </fieldset>
+
+          <fieldset>
+            <input name="phone" placeholder="Phone Number (Optional)" type="tel" tabindex="3" />
+          </fieldset>
+
+          <fieldset>
+            <textarea name="message" placeholder="Type Your Message Here..." maxlength="500" tabindex="4" required /></textarea>
+          </fieldset>
+
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit"
+             data-submit="Your message has been sent! I will respond to you
+             as soon as possible. :)">Submit</button>
+            <button name="clear" onclick="clearForm()" value="Reset">Clear</button>
+            <script>function clearForm() {document.getElementById("contact").reset();}</script>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </body>
 </html>
