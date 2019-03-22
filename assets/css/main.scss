@@ -51,6 +51,15 @@ nav {
     position: absolute;
     text-align: center;
     z-index: 1;
+
+    li {
+      display:block;
+    }
+
+    // hide name
+    #index-static {
+      display: none;
+    }
   }
 }
 
