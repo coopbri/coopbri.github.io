@@ -188,4 +188,19 @@ footer {
   width: 100%;
   bottom: 8px;
   position: fixed;
+
+  // Collapse margin between buttons and text
+  h4 {
+    margin-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .social-button {
+    width: 24px;
+    height: 24px;
+    padding: 0 10px 0 0;
+  }
 }
