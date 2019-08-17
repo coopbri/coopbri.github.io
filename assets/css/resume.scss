@@ -19,10 +19,27 @@ body {
   padding-bottom: 50px;
 }
 
+#access {
+  float: left;
+  margin-left: 10px;
+
+  input {
+    background-color: #eee;
+    border: 1px solid #222;
+    color: #222;
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+
 #resume {
   max-width: 700px;
   background: #fff;
-  margin: 0px auto 0px;
+  margin: auto;
   box-shadow: 1px 1px 2px #DAD7D7;
   border-radius: 3px;
   padding: 40px;
@@ -93,5 +110,5 @@ body {
     }
 
   }
-  
+
 }
