@@ -3,7 +3,6 @@ $hover-color: #16a085;
 $text-color: #DBDBDB;
 
 html, body {
-
   height: 100%;
   font-family: Helvetica, sans-serif;
   margin: 0;
@@ -12,17 +11,15 @@ html, body {
 }
 
 #background {
-
   background-image: url("../img/fern.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0; /* For fade */
+  opacity: 0; // For fade
 }
 
 nav {
-
   width: 100%;
 
   li {
@@ -64,7 +61,6 @@ nav {
 }
 
 #nav-left {
-
   ul {
     letter-spacing: 3px;
     margin: 0;
@@ -78,7 +74,6 @@ nav {
 }
 
 #nav-right {
-
   ul {
     letter-spacing: 3px;
     margin: 0;
