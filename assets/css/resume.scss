@@ -1,22 +1,16 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
+html, body {
+  background: #eee;
+  color: #222;
 }
 
-body {
-  min-height: 100%;
-  background: #eee;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #222;
-  font-size: 14px;
-  line-height: 26px;
-  padding-bottom: 50px;
+nav {
+  a {
+    color: black;
+  }
 }
 
 #access {
@@ -37,13 +31,24 @@ body {
 }
 
 #resume {
+  font-family: 'Lato', sans-serif;
+  line-height: 26px;
+  font-size: 14px;
+  display: block;
+  position: absolute;
   max-width: 700px;
+  overflow: auto; // temporary: scrollbar
   background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
   box-shadow: 1px 1px 2px #DAD7D7;
   border-radius: 3px;
   padding: 40px;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .header {
@@ -106,9 +111,10 @@ body {
           margin: 4px 0 0 20px;
         }
       }
-
     }
-
   }
+}
 
+footer {
+  display: none;
 }
