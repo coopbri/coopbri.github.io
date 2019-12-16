@@ -8,6 +8,11 @@
     // page break after experience section
     break-after: page;
   }
+
+  // remove `hr` tags at page breaks
+  .break {
+    display: none;
+  }
 }
 
 /* screen view */
