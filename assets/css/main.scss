@@ -116,10 +116,9 @@ nav {
     opacity: 0; /* For fade */
     }
 
-  p {
-    text-align: center;
-    word-wrap: normal;
+  #about {
     opacity: 0;
+    font-size: 18px;
   }
 
   a {
@@ -129,10 +128,6 @@ nav {
 
   h2 {
     text-align: center;
-  }
-
-  #construction {
-    opacity: 0;
   }
 
   .form-container {
