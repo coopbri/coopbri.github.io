@@ -106,6 +106,7 @@ nav {
   right: 0;
   position: fixed;
   margin: auto;
+  overflow: auto;
 
   /* For mobile */
   @media only screen and (max-width: 640px) {
