@@ -45,6 +45,7 @@ nav {
   /* For mobile */
   // center name and nav if viewport is relatively small
   @media only screen and (max-width: 930px) {
+    display: none; // enable when mobile design ready
     position: absolute;
     text-align: center;
     z-index: 1;
@@ -90,9 +91,14 @@ nav {
   opacity: 0; /* For fade */
 }
 
+.wip {
+  opacity: 0;
+}
+
 #content {
   color: $text-color;
-  width: 800px;
+  // width: 800px;
+  width: 50%;
   height: 700px;
   top: 0;
   bottom: 0;
@@ -104,6 +110,12 @@ nav {
   /* For mobile */
   @media only screen and (max-width: 640px) {
     margin-top: 75%;
+
+    .wip {
+      opacity: 1;
+      text-align: center;
+      margin: auto;
+    }
   }
 
   #brian {
@@ -119,6 +131,10 @@ nav {
   #about {
     opacity: 0;
     font-size: 18px;
+
+    @media only screen and (max-width: 640px) {
+      display: none; // enable when mobile design ready
+    }
   }
 
   a {
@@ -143,6 +159,10 @@ nav {
       padding: 25px;
       margin: 50px 0;
       // font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+
+      @media only screen and (max-width: 640px) {
+        display: none; // enable when mobile design ready
+      }
 
       h3 {
         // color: #16a085;
