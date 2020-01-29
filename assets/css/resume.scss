@@ -6,7 +6,7 @@
 
   #experience {
     // page break after experience section
-    break-after: page;
+    // break-after: page;
   }
 
   // remove `hr` tags at page breaks
@@ -87,15 +87,14 @@
     text-align: center;
 
     .name {
-      font-size: 40px;
+      font-size: 30px;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
       font-weight: 700;
     }
 
     .about {
       font-style: italic;
-      margin-bottom: 10px;
     }
   }
 
