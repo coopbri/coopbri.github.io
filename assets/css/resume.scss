@@ -91,6 +91,22 @@
     .about {
       font-style: italic;
     }
+
+    .contact {
+      padding-top: 5px;
+
+      span#mail {
+        padding-right: 80px;
+      }
+
+      #mail-ico {
+        vertical-align: -1px;
+      }
+
+      #web-ico {
+        vertical-align: -3px;
+      }
+    }
   }
 
   .title {
@@ -113,6 +129,10 @@
       color: #999;
       margin-bottom: 10px;
     }
+  }
+
+  ul {
+    padding-left: 1.2em;
   }
 
   footer {
