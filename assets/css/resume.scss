@@ -1,5 +1,10 @@
 /* print view */
 @media print {
+  * {
+    font-size: 14px;
+  }
+
+  // hide header
   .core-static {
     display: none;
   }
@@ -7,6 +12,10 @@
   // hide download button
   a {
     display: none;
+  }
+
+  @page {
+    margin: 10px 35px;
   }
 }
 
@@ -104,30 +113,46 @@
     }
   }
 
-  .title {
-    letter-spacing: 2px;
-    color: #54AFE4;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+  .content {
+    hr {
+      margin-bottom: 12px;
+    }
 
-  .entry {
-    margin-bottom: 20px;
-
-    .name {
+    .title {
+      letter-spacing: 2px;
+      color: #54AFE4;
       font-weight: bold;
-    }
-
-    .details {
-      color: #999;
+      font-size: 16px;
       margin-bottom: 10px;
+      text-transform: uppercase;
     }
-  }
 
-  ul {
-    padding-left: 1.2em;
+    .entry {
+      margin-bottom: 10px;
+
+      .name {
+        font-weight: bold;
+      }
+
+      .details {
+        color: #999;
+        margin-bottom: -5px;
+      }
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    // pad bottom of education section
+    #education {
+      margin-bottom: 18px;
+    }
+
+    // // modify default ul formatting
+    #skills-list {
+      margin-top: -2px;
+    }
   }
 
   footer {
