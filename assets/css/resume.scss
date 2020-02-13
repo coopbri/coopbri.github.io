@@ -34,7 +34,27 @@
     a {
       color: black;
     }
+
+    .menu {
+      span {
+        background-color: black;
+      }
+    }
   }
+
+.sub-menu {
+  li {
+    a {
+      color: black;
+    }
+  }
+}
+
+.open {
+  span:nth-child(2) {
+    background-color: #f0f0f5;
+  }
+}
 
   #resume {
     font-family: 'Lato', sans-serif;
