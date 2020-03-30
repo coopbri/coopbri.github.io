@@ -14,19 +14,11 @@
   </head>
 
   <body>
-    <div id="content">
-      <div class="wip">
-        <p>Mobile design for contact page currently under construction.<br /><br />Please use desktop mode in the meantime. Sorry!</p>
-      </div>
+    <div id="content-full">
       <div class="form-container">
         <form id="contact" action="https://formspree.io/brian@brian-cooper.com" method="post">
           <h3>Contact Me</h3>
-          Please use the form below if you would like to get in touch.
-          <br />
-          <br />
-          You can also reach me on <a href="https://www.linkedin.com/in/coopbri">LinkedIn</a> or <a href="mailto:brian@brian-cooper.com?Subject=Personal%20Website%20Contact">email</a> me directly.
-          <br />
-          <br />
+          <p>Please use the form below if you would like to get in touch. You can also reach me on <a href="https://www.linkedin.com/in/coopbri">LinkedIn</a> or <a href="mailto:brian@brian-cooper.com?Subject=Personal%20Website%20Contact">email</a> me directly.</p>
           <fieldset>
             <input name="name" placeholder="Full Name" type="text" tabindex="1" required autofocus />
           </fieldset>
@@ -50,14 +42,12 @@
             <button name="clear" onclick="clearForm()" value="Reset">Clear</button>
             <script>function clearForm() {document.getElementById("contact").reset();}</script>
           </fieldset>
-          <br />
-          <br />
           <h4>If you would like to send an encrypted message, my PGP key is <a href="assets/pubkey.asc" type="text/plain">here</a>.</h4>
         </form>
       </div>
     </div>
 
-    <!--main nav and footer, loaded from core.html-->
+    <!-- main nav and footer, loaded from core.html -->
     <div class="core-static"></div>
   </body>
 </html>

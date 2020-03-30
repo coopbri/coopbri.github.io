@@ -248,15 +248,11 @@ nav {
   opacity: 0; /* For fade */
 }
 
-.wip {
-  display: none;
-}
-
 #content {
   color: $text-color;
-  // width: 800px;
+  font-size: 1.2em;
   width: 50%;
-  height: 700px;
+  height: 40%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -267,22 +263,14 @@ nav {
 
   /* For mobile */
   @media only screen and (max-width: 640px) {
-    margin-top: 75%;
-
-    .wip {
-      display: block;
-      text-align: center;
-      margin: auto;
-    }
+    margin-top: 25%;
+    width: 80%;
+    font-size: 1em;
+    height: 70%;
   }
 
   #about {
     opacity: 0;
-    font-size: 18px;
-
-    @media only screen and (max-width: 640px) {
-      display: none; // enable when mobile design ready
-    }
   }
 
   a {
@@ -295,29 +283,25 @@ nav {
   }
 
   .form-container {
-	  max-width: 500px;
-	  width: 100%;
+    width: 100%;
 	  margin: 0 auto;
 	  position: relative;
     text-align: center;
     opacity: 0;
 
     #contact {
-      padding: 25px;
-      margin: 50px 0;
-
-      @media only screen and (max-width: 640px) {
-        display: none; // enable when mobile design ready
-      }
-
       h3 {
-        // color: #16a085;
       	display: block;
       	font-size: 30px;
-      	font-weight: 400;
+        font-weight: 400;
+
+        @media only screen and (max-width: 640px) {
+          display: none;
+        }
       }
 
       h4 {
+        padding-top: 5px;
         margin: 5px 0 15px;
         display: block;
         font-size: 13px;
@@ -344,6 +328,11 @@ nav {
       }
     }
   }
+}
+
+#content-full {
+  @extend #content;
+  overflow: visible;
 }
 
 footer {
